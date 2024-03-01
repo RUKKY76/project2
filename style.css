@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+} 
+
+body{
+  background-color: bisque;
+}
+.main-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.box-1{
+  background-color: hsl(263, 55%, 52%);
+  padding: 1.5rem;
+}
+
+.image-name1 {
+  display: flexbox;
+}
+.text-1 p{
+  color:white;
+}
+
+.text-1 h6{
+  color:  hsl(217, 19%, 35%);
+}
+
+.box-2{
+  background-color:  hsl(217, 19%, 35%);
+  padding: 1.5rem;
+}
+
+.image-name2 {
+  display: flexbox;
+}
+
+.text-2 p{
+  color:white;
+}
+
+.text-2 h6{
+  color:  hsl(217, 19%, 35%);
+}
+
