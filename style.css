@@ -13,14 +13,28 @@ body{
 
 }
 
-.box-1{
+.purple-box{
   background-color: hsl(263, 55%, 52%);
   padding: 1.5rem;
+  background-image: url("/images/bg-pattern-quotation.svg");
+  background-repeat:no-repeat;
+  /* padding-right: 2rem; */
+  background-position: 80% top;
+  /* top: 95%; */
+  
 }
 
 .image-name1 {
-  display: flexbox;
+  display: flex;
+  /* margin-left: 2rem; */
 }
+
+.Daniel-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
 .text-1 p{
   color:white;
 }
@@ -46,3 +60,7 @@ body{
   color:  hsl(217, 19%, 35%);
 }
 
+.main-container img {
+  border-radius: 50%;
+  width: 2rem;
+}
