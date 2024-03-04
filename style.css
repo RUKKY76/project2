@@ -5,17 +5,22 @@
 } 
 
 body{
-  background-color: bisque;
-  margin: 5rem;
+  background-color: hsl(210, 46%, 95%);
+  margin: 3rem;
   
 }
 .main-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* display: flex; */
 }
 
-.main-container img {
+
+
+.first-row{
+  display: flex;
+}
+.main-container img , .general-container img{
   border-radius: 50%;
   width: 2rem;
 }
@@ -24,16 +29,14 @@ body{
 /* purple-box start here */
 .purple-box{
   background-color: hsl(263, 55%, 52%);
-  padding: 1.5rem;
+  padding: 2rem;
   background-image: url("/images/bg-pattern-quotation.svg");
-  background-repeat:no-repeat;
-  /* padding-right: 2rem; */
-  background-position: 80% top;
-  /* top: 95%; */
-  width: 35rem;
+  background-repeat:no-repeat;  
+  background-position: 85% top;  
+  width: 38rem;
+  border-radius: 10px;
   margin-right: 2rem;
-  margin-bottom: 2rem;
-  
+  height: max-content;
 }
 
 .image-name1 {
@@ -46,46 +49,70 @@ body{
   display: flex;
   flex-direction: column;
   margin-left: 1rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .text-1 p{
   color:white;
   margin-bottom: 1.2rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: large;
 }
 
-
-.text-1 h6{
-  color:  hsl(217, 19%, 35%);
-  
+.text-1 .p2{
+  color:hsl(0, 0%, 81%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
 }
+
 
 .Daniel-info p{
   color: hsl(0, 0%, 100%);
 }
 
-.Daniel-info {
-  color:hsl(217, 19%, 35%);
-  
+.Daniel-info h6{
+  text-align: center;
+  color:hsl(0, 0%, 81%)    
 }
 /* purple-box ends here */
 
 
 /* blue-box start here */
 .blue-box{
-  background-color:  hsl(217, 19%, 35%);
-  padding: 1.5rem;
-  width:20rem;
-   height: 20rem;
+  background-color: hsl(217, 19%, 35%);
+  padding: 2rem;
+  width: 18rem;
+  height: max-content;
   margin-right: 2rem;
   margin-bottom: 2rem;
-  /* height: fit-content; */
-
+  border-radius: 10px;
 }
 
 .image-name2 {
-  display: flex;
-  /* margin-left: 2rem; */
+  display: flex;  
   margin-bottom: 1.2rem;
+}
+
+.image-name2 p { 
+  color: white;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
+}
+
+.image-name2 h5 { 
+  color: hsl(0, 0%, 81%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
 }
 
 .jonathan-info {
@@ -99,10 +126,16 @@ body{
 .text-2 p{
   color:white;
   margin-bottom: 1.2rem;
+  
 }
 
-.text-2 h6{
-  color:  hsl(217, 19%, 35%);
+.text-2 h5{
+  color: white;
+  font-size: 0.8rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4rem;
 }
 /* blue-box ends here */
 
@@ -111,7 +144,9 @@ body{
 .offwhite-box{
   background-color:  hsl(0, 0%, 100%);
   padding: 1.5rem;
-  width: 20rem;
+  width: 15rem;
+  height: 100%;
+  border-radius: 10px;
   
 }
 
@@ -128,21 +163,43 @@ body{
 }
 
 .text-3 p{
-  color:white;
-  /* margin-bottom: 1.2rem; */
+  color:hsl(217, 19%, 35%);
+  font-size: 1.2rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 1.2rem;
 }
 
 .text-3 h6{
   color:  hsl(217, 19%, 35%);
+  font-size: 0.8rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 1.2rem;
+  opacity: 70%;
+}
+
+.last-row{
+  width: 50%;
+  display: flex;
 }
 
 
+
+.general-container{
+  display: flex;
+}
 
 /* white-box start here */
 .white-box{
   background-color: hsl(0, 0%, 100%);
   padding: 1.5rem;
-  width: 20rem;
+  min-width: 17rem;
+  margin: 0 2rem 2rem 0;
+  height: max-content;
+  border-radius: 10px;
 }
 
 .image-names4 {
@@ -151,6 +208,11 @@ body{
   margin-bottom: 1.2rem;
 }
 
+.jeanette-info h6{
+  text-align: center;
+  color:hsl(217, 19%, 35%);
+  opacity: 60%;
+}
 
 .jeanette-info {
   display: flex;
@@ -159,15 +221,25 @@ body{
   
 }
 
+.jeanette-info p{
+  color:hsl(217, 19%, 35%);
+}
 
 .text-4 p{
-  color:white;
+  color: hsl(0, 0%, 0%);
   margin-bottom: 1.2rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: larger; 
+
 }
 
 .text-4 h6{
- 
-  color:  hsl(217, 19%, 35%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: hsl(217, 19%, 35%);
  
 }
 /* white box end here */
@@ -177,7 +249,8 @@ body{
 .black-box{
   background-color:  hsl(219, 29%, 14%);
   padding: 1.5rem;
-  width: 20rem;
+  min-width: 39rem;
+  border-radius: 10px;
 }
 
 .image-name5 {
@@ -192,14 +265,31 @@ body{
   margin-left: 1rem;
 }
 
+.patrick-info p{
+  color: hsl(0, 0%, 81%);
+}
+
+.patrick-info h6{
+  color: hsl(0, 0%, 81%);
+  text-align: center;
+  opacity: 60%;
+}
 
 .text-5 p{
-  color:white;
-  margin-bottom: 1.2rem;
+  color:hsl(0, 0%, 100%);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .text-5 h6{
-  color:  hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+  font-size: 0.7rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 /* black box end here */
 
