@@ -9,11 +9,11 @@ body{
   margin: 3rem;
   
 }
-.main-container{
+/* .main-container{
   /* display: grid; */
   /* grid-template-columns: 1fr 1fr 1fr; */
   /* display: flex; */
-}
+/* } */ 
 
 .first-row{
   display: flex;
@@ -33,14 +33,12 @@ body{
   background-position: 85% top;  
   width: 38rem;
   border-radius: 10px;
-  margin-right: 2rem;
-  margin-bottom: ;
+  margin-right: 2rem;  
   height: max-content;
 }
 
 .image-name1 {
   display: flex;
-  /* margin-left: 2rem; */
   margin-bottom: 1.2rem;
 }
 
@@ -182,7 +180,7 @@ body{
 .white-box{
   background-color: hsl(0, 0%, 100%);
   padding: 1.5rem;
-  width: 40rem;
+  min-width: 15rem;
   margin: 0 2rem 2rem 0;
   height: max-content;
   border-radius: 10px;
@@ -258,8 +256,3 @@ body{
   font-style: normal;
 }
 /* black box end here */
-
-
-
-
-
